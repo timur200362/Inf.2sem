@@ -9,8 +9,9 @@ namespace Inf107_2_
     {
         static void Main(string[] args)
         {
-            CustomExampleRunner cesRunner = new CustomExampleRunner();
-            cesRunner.Run();
+            //CustomExampleRunner cesRunner = new CustomExampleRunner();
+            //cesRunner.Run();
+            Console.WriteLine("ИТИС");
         }
     }
 }
