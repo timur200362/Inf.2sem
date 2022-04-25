@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inf107(2)", "Inf107(2).csproj", "{991012F2-6635-46A5-AA1E-DD6EB5B89B35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inf107(2)", "Inf107(2).csproj", "{991012F2-6635-46A5-AA1E-DD6EB5B89B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AISD107", "..\AISD107\AISD107.csproj", "{69D9AFC6-08B8-41CA-8346-24D98655CDF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AISD107", "..\AISD107\AISD107.csproj", "{69D9AFC6-08B8-41CA-8346-24D98655CDF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
