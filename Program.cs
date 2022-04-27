@@ -11,7 +11,8 @@ namespace Inf107_2_
         {
             //CustomExampleRunner cesRunner = new CustomExampleRunner();
             //cesRunner.Run();
-            
+            TreeRunner tr = new TreeRunner();
+            tr.Run();
         }
     }
 }

@@ -10,19 +10,31 @@ namespace Inf107_2_.Tree
     {
         public void Run()
         {
-            var tree = new BinarySearchTree<string>();
-            tree.Add("A",8);
-            tree.Add("B", 3);
-            tree.Add("C", 10);
-            tree.Add("C", 1);
-            tree.Add("C", 5);
-            tree.Add("C", 14);
-            tree.Add("C", 4);
-            tree.Add("C", 6);
-            tree.Add("C", 13);
-            tree.Add("C", 7);
-            tree.RemoveRecursion(6);
-            tree.BreadthFirstSearch();
+            //Проверка метода Remove
+            //var tree = new BinarySearchTree<string>();
+            //tree.Add("A",8);
+            //tree.Add("B", 3);
+            //tree.Add("C", 10);
+            //tree.Add("C", 1);
+            //tree.Add("C", 5);
+            //tree.Add("C", 14);
+            //tree.Add("C", 4);
+            //tree.Add("C", 6);
+            //tree.Add("C", 13);
+            //tree.Add("C", 7);
+            //tree.RemoveRecursion(6);
+            //tree.BreadthFirstSearch();
+
+            //Проверка метода IsExternal
+            var tree2 = new BinarySearchTree<string>();
+            tree2.Add("A",8);
+            tree2.Add("A", 6);
+            tree2.Add("A", 9);
+            tree2.Add("A", 5);
+            tree2.Add("A", 7);
+            tree2.Add("A", 10);
+            Console.WriteLine(tree2.IsExternal(6));
+            
             //var n8 = new TreeNode<int>(8);
             //var n9 = new TreeNode<int>(9);
             //var n5 = new TreeNode<int>(5, new List<TreeNode<int>>() { n8, n9 });

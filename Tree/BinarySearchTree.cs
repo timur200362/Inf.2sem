@@ -177,7 +177,31 @@ namespace Inf107_2_.Tree
         /// </summary>
         public bool IsExternal(int p)
         {
-            throw new NotImplementedException();
+            BinaryTreeNode<T> node = Find2(p);
+            return node != null && node.LeftChild == null && node.RightChild == null;
+            //BinaryTreeNode<T> node = Find2(p);
+            //if (node != null && node.LeftChild == null && node.RightChild == null)
+            //{
+            //    return true;
+            //}
+            //return node != null && node.LeftChild == null && node.RightChild == null;
+            //throw new NotImplementedException();
+            //BinaryTreeNode<T> node = new BinaryTreeNode<>('C', 5, null);
+            //if (root == null)
+            //{
+            //    throw new Exception("Дерево пустое");
+            //}
+            //if (root.Key>p)
+            //{
+            //    if (root.LeftChild == null)
+            //    {
+            //        return false;
+            //    }
+            //    else
+            //    {
+            //        while(root.LeftChild.LeftChild!=null)
+            //    }
+            //}
         }
 
         /// <summary>
@@ -232,6 +256,40 @@ namespace Inf107_2_.Tree
                 }
             }
             return false;
+        }
+        public BinaryTreeNode<T> Find2(int key)
+        {
+            if (root == null)
+            {
+                return null;
+                throw new ArgumentOutOfRangeException("Дерево пусто");
+            }
+            var rootCopy = root;
+            bool isFind = false;
+            while (isFind == false)
+            {
+                if (rootCopy.Key == key)
+                {
+                    return rootCopy;
+                }
+                if (key < rootCopy.Key)
+                {
+                    if (rootCopy.LeftChild == null)
+                    {
+                        return null;
+                    }
+                    rootCopy = rootCopy.LeftChild;
+                }
+                else if (key > rootCopy.Key)
+                {
+                    if (rootCopy.RightChild == null)
+                    {
+                        return null;
+                    }
+                    rootCopy = rootCopy.RightChild;
+                }
+            }
+            return null;
         }
         /// <summary>
         /// добавление в дерево значения 
