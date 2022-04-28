@@ -27,9 +27,5 @@ namespace Inf107_2_.Tree
             newRoot.LeftChild = r;
             r = newRoot;
         }
-        public void test()
-        {
-            throw new Exception();
-        }
     }
 }
