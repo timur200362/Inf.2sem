@@ -13,6 +13,10 @@ namespace Inf107_2_.Tree
         public BinaryTreeNode<T> LeftChild;
         public BinaryTreeNode<T> RightChild;
         public BinaryTreeNode<T> Parent;
+        /// <summary>
+        /// Высота узла
+        /// </summary>
+        public int Hight;
 
         public BinaryTreeNode(T value, int key, BinaryTreeNode<T> parent = null)
         {
