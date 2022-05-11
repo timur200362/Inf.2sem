@@ -39,8 +39,8 @@ namespace AISD107
             //Console.WriteLine(symbolCount);
             HuffmanTree huffmanTree = new HuffmanTree();
             string input;
-            string path1 = "C:/Users/Admin/source/repos/AISD107/node1.txt";
-            string path2 = "C:/Users/Admin/source/repos/AISD107/node2.txt";
+            string path1 = "C:/Users/Admin/source/repos/Inf107(2)/AISD107/node1.txt";
+            string path2 = "C:/Users/Admin/source/repos/Inf107(2)/AISD107/node2.txt";
             using (StreamReader fileIn = new StreamReader(path1))
             {
                 input = fileIn.ReadToEnd();
