@@ -22,7 +22,15 @@ namespace Inf107_2_.Tree
         /// <returns></returns>
         public double Calc()
         {
+            var op = GetOperation(head.Value);
+            return op(Calc(head.LeftChild), Calc(head.RightChild));
             throw new NotImplementedException();
+        }
+        public double Calc(BinaryTreeNode<char> node)
+        {
+            if (node.Value <= '9' && node.Value >= '0')
+                return double.Parse(node.Value + "");
+            return GetOperation(node.Value)(Calc(node.LeftChild), Calc(node.RightChild));
         }
         /// <summary>
         /// Вычисление одного действия

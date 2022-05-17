@@ -39,8 +39,8 @@ namespace AISD107.HuffmanCodding
                 return;
             }
 
-            //Stopwatch timer = new Stopwatch();
-            //timer.Start();
+            Stopwatch timer = new Stopwatch();
+            timer.Start();
 
             var length = new Random().Next(50, 100);
             var array = new string[length];
@@ -59,9 +59,9 @@ namespace AISD107.HuffmanCodding
 
             File.WriteAllLines(path, array);
 
-            //timer.Stop();
+            timer.Stop();
 
-            //$"{length} lines was added to file {path} \n{timer.Elapsed.TotalSeconds} seconds spent".Print(ConsoleColor.Green);
+            $"{length} lines was added to file {path} \n{timer.Elapsed.TotalSeconds} seconds spent".Print(ConsoleColor.Green);
         }
     }
 

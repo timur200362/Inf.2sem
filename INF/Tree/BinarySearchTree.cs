@@ -200,7 +200,10 @@ namespace Inf107_2_.Tree
         {
             return root.Value;
         }
-
+        public BinaryTreeNode<T> Head()
+        {
+            return root;
+        }
         /// <summary>
         /// возвращает значение «родителя» для вершины в позиции p
         /// </summary>
@@ -290,7 +293,20 @@ namespace Inf107_2_.Tree
         {
             throw new Exception();
         }
-
+        public void ShowSymmetric()
+        {
+            ShowSymmetric(root, 0);
+        }
+        public void ShowSymmetric(BinaryTreeNode<T> node, int level)
+        {
+            if (node != null)
+            {
+                ShowSymmetric(node.LeftChild, level + 1);
+                for (int i = 0; i < 8 * level; i++) Console.Write(" ");
+                Console.WriteLine(node.Key);
+                ShowSymmetric(node.RightChild, level + 1);
+            }
+        }
         /// <summary>
         /// Поиск элемента в дереве
         /// </summary>
