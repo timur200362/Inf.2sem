@@ -14,6 +14,17 @@ namespace Inf107_2_.Tree
         /// </summary>
         /// <param name="value"></param>
         /// <param name="key"></param>
+        //public BinaryTreeNode<T> Head
+        //{
+        //    get
+        //    {
+        //        return root;
+        //    }
+        //    set
+        //    {
+        //        root = value;
+        //    }
+        //}
         public void Add(T value, int key)
         {
             if (root == null)
@@ -200,7 +211,7 @@ namespace Inf107_2_.Tree
         {
             return root.Value;
         }
-        public BinaryTreeNode<T> Head()
+        public BinaryTreeNode<T> Headroot()
         {
             return root;
         }
