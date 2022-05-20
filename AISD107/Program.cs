@@ -10,6 +10,7 @@ namespace AISD107
     {
         static void Main(string[] args)
         {
+            MaxRunner runner = new MaxRunner();
             //Sakhir.Run();
 
             //Karatsuba kar = new Karatsuba();
@@ -19,6 +20,7 @@ namespace AISD107
             //Runner runner = new Runner();
             //runner.Run();
         }
+
     }
 
 }
