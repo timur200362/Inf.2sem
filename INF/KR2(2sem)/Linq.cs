@@ -125,15 +125,15 @@ namespace Inf107_2_.KR2_2sem_
             var checkes = new List<Check>
             {
                 new Check{
-                   List_Product_Count_Price=new List<ProductCountPrice>{new ProductCountPrice {product=new ProductCount{product=products[4], count=1},price=prices[7]},
-                   new ProductCountPrice {product=new ProductCount{product=products[5], count=2},price=prices[7]},
+                   List_Product_Count_Price=new List<ProductCountPrice>{new ProductCountPrice {product=new ProductCount{product=products[4], count=1},price=prices[5]},
+                   new ProductCountPrice {product=new ProductCount{product=products[5], count=2},price=prices[6]},
                    new ProductCountPrice {product=new ProductCount{product=products[6], count=1},price=prices[7]}
 
                    }
                   },
                 new Check{
-                   List_Product_Count_Price=new List<ProductCountPrice>{new ProductCountPrice {product=new ProductCount{product=products[3], count=1},price=prices[7]},
-                   new ProductCountPrice {product=new ProductCount{product=products[5], count=1},price=prices[7]}
+                   List_Product_Count_Price=new List<ProductCountPrice>{new ProductCountPrice {product=new ProductCount{product=products[3], count=1},price=prices[4]},
+                   new ProductCountPrice {product=new ProductCount{product=products[5], count=1},price=prices[6]}
 
                    }
                   }

@@ -3,6 +3,7 @@ using Inf107_2_.Tree;
 using Inf107_2_.Delegate;
 using Inf107_2_.KR2_2sem_;
 using Inf107_2_.KR2_2sem_.Event;
+using Inf107_2_.Threadaclass;
 
 namespace Inf107_2_
 {
@@ -10,14 +11,15 @@ namespace Inf107_2_
     {
         static void Main(string[] args)
         {
+            //Fibonachi.Run();
             //проверка поворотов
-            BinarySearchTree<int> tree = new BinarySearchTree<int>();
-            tree.Add(56, 6); tree.Add(43, 3); tree.Add(43, 2); tree.Add(43, 8); tree.Add(47, 7); tree.Add(11, 5); tree.Add(89, 11); tree.Add(56, 12);
-            tree.ShowSymmetric();
-            AVLTree avl = new AVLTree(tree.Headroot());
-            avl.BigRightTurn(ref avl.root);
-            avl.ShowSymmetric();
-            Console.ReadKey();
+            //BinarySearchTree<int> tree = new BinarySearchTree<int>();
+            //tree.Add(56, 6); tree.Add(43, 3); tree.Add(43, 2); tree.Add(43, 8); tree.Add(47, 7); tree.Add(11, 5); tree.Add(89, 11); tree.Add(56, 12);
+            //tree.ShowSymmetric();
+            //AVLTree avl = new AVLTree(tree.Headroot());
+            //avl.BigRightTurn(ref avl.root);
+            //avl.ShowSymmetric();
+            //Console.ReadKey();
 
             ////проверка дерева выражений
             //BinaryTreeNode<char> head = new BinaryTreeNode<char>('*', 5, null);
@@ -42,7 +44,8 @@ namespace Inf107_2_
             //Задание с деревом
             //TreeRunner tr = new TreeRunner();
             //tr.Run();
-
+            Linq2 ln=new Linq2();
+            ln.Run();
             //Задание с Linq
             //Linq1 linq = new Linq1();
             //linq.Run();

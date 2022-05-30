@@ -46,7 +46,7 @@ namespace Inf107_2_.KR2_2sem_.Event
         }
         private void PatientAccepted(Patient patient, Nurse nurse)
         {
-            Console.WriteLine("Медсестара {0} оформила пациента {1}.", nurse.Name, patient.Name);
+            Console.WriteLine("Медсестра {0} приняла пациента {1}.", nurse.Name, patient.Name);
         }
         private void PatientWatched(Patient patient, Doctor doctor)
         {
